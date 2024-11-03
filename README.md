@@ -1,3 +1,3 @@
 # palautusrepositorio
 
-[URL](https://github.com/varkkha/ohtuvarasto/tree/main)
+(https://github.com/varkkha/ohtuvarasto/tree/main)
