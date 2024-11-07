@@ -1,5 +1,6 @@
 from player_reader import PlayerReader
 from player_stats import PlayerStats
+from rich import print
 
 def main():
     url = "https://studies.cs.helsinki.fi/nhlstats/2023-24/players"
