@@ -45,15 +45,15 @@ class UserService:
             raise UserInputError("Invalid username or password")
 
         if self._user_repository.find_by_username(username):
-            raise UserInputError("Invalid username or password")
+            raise UserInputError("Username already in use")
 
         if len(password) < 8:
-            raise UserInputError("Invalid username or password")
+            raise UserInputError("Too short password")
 
         if password.isalpha():
-            raise UserInputError("Invalid username or password")
+            raise UserInputError("Password should contain letters and numbers")
 
         if password != password_confirmation:
-            raise UserInputError("Invalid username or password")
+            raise UserInputError("Passwords differ")
 
 user_service = UserService()
